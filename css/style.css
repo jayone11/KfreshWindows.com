@@ -1,0 +1,114 @@
+/* Path: css/style.css */
+
+@import url(./bubbles.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#hero {
+    position: relative;
+    background: radial-gradient(circle, rgba(219,249,244,1) 0%, rgba(29,155,240,1) 84%);
+    width: 100%;
+    min-height: 80vh;
+}
+
+.header {
+     display: flex;      
+}
+
+.navigation {
+    display: grid;
+    color: #fff;
+    width: 100%;
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+
+.logo {
+    background-image: url(/images/kfresh-logo.jpeg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    background-size: 50%;
+    height: 80px;
+    width: 200px;
+}
+
+.nav_ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-self: center;
+    /* border: 1px solid black; */
+}
+
+#h1-hero {
+    color: black;
+    -webkit-text-stroke: .5px #fff;
+    position: relative;
+    top: 200px;
+    left: 50px;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    color: black;
+    -webkit-text-stroke: .4px #fff;
+    position: relative;
+    top: 200px;
+    left: 50px;
+    width: 400px;
+}
+
+#hero-img {
+    background-image: url(/images/window-hero-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 450px;
+    height: 580px;
+    z-index: 0;
+}
+
+.hero_action-box {
+    position: absolute;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    bottom: -50px;
+    display: flex;
+    left: 50px;
+    flex-direction: column;
+    min-height: 150px;
+    border: 1px solid black;
+    box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+}
+
+.hero_action-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #53bf53;
+}
+
+.hero_action-box h3, select {
+    margin-bottom: 12px;
+} 
+
+.services {
+    height: 500px;
+    background-color: #fff;
+}
