@@ -27,7 +27,7 @@ body {
     padding: 3em;
     z-index: 1;
     height: 525px;
-    min-width: 450px;
+    min-width: 550px;
     background-image: linear-gradient(to right,
     rgba(0,0,0,.9) 30%,
     rgba(0,0,0,.8) 50%,
