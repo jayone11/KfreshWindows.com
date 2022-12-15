@@ -14,7 +14,7 @@ body {
 
 #hero {
     position: relative;
-    background: radial-gradient(circle, rgba(219,249,244,1) 0%, rgba(29,155,240,1) 84%);
+    background: radial-gradient(circle, rgba(219,249,244,1) 0%, rgba(29,155,240,1) 100%);
     width: 100%;
     min-height: 80vh;
 }
@@ -26,12 +26,14 @@ body {
     left: 0;
     padding: 3em;
     z-index: 1;
-    height: 525px;
-    min-width: 550px;
+    height: 530px;
+    width: 100%;
     background-image: linear-gradient(to right,
-    rgba(0,0,0,.9) 30%,
-    rgba(0,0,0,.8) 50%,
-    rgba(0,0,0,.4) 70%,
+    rgba(0,0,0,.9) 0%,
+    rgba(0,0,0,.7) 10%,
+    rgba(0,0,0,.5) 20%,
+    rgba(0,0,0,.3) 40%,
+    rgba(0,0,0,.2) 60%,
     rgba(0,0,0,0) 100%
     );
 }
@@ -57,7 +59,7 @@ body {
     /* bottom: 100px; */
     /* right: 0; */
     width: 100%;
-    height: 525px;
+    height: 530px;
     z-index: 0;
 }
 
@@ -77,11 +79,12 @@ body {
     background-image: url(/images/kfresh-logo.jpg);
     background-repeat: no-repeat;
     position: absolute;
-    top: 10px;
-    left: 50px;
-    background-size: 50%;
-    height: 80px;
-    width: 200px;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    height: 100px;
+    /* width: 130px; */
+    min-width: 130px;
     z-index: 3;
 }
 
