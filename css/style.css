@@ -1,6 +1,7 @@
 /* Path: css/style.css */
 
 @import url(./bubbles.css);
+@import url(./drops.css);
 
 * {
     margin: 0;
