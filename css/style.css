@@ -23,11 +23,12 @@ body {
 #hero h1{
     color: #fff;
     position: absolute;
-    top: 100px;
+    /* top: 100px; */
+    bottom: 0;
     left: 0;
     padding: 3em;
     z-index: 1;
-    height: 530px;
+    height: 535px;
     width: 100%;
     background-image: linear-gradient(to right,
     rgba(0,0,0,.9) 0%,
@@ -56,11 +57,11 @@ body {
     /* background-size: 100%; */
     background-position: center;
     position: absolute;
-    top: 100px;
-    /* bottom: 100px; */
+    /* top: 100px; */
+    bottom: 0;
     /* right: 0; */
     width: 100%;
-    height: 530px;
+    height: 535px;
     z-index: 0;
 }
 
@@ -129,4 +130,19 @@ body {
 .services {
     height: 500px;
     background-color: #fff;
+}
+
+.about {
+    height: 500px;
+    background-color: gray;
+}
+
+.gallery {
+    height: 500px;
+    background-color: #fff;
+}
+
+.contact {
+    height: 500px;
+    background-color: gray;
 }
