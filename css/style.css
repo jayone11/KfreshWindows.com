@@ -99,16 +99,29 @@ body {
 }
 
 .logo {
-    background-image: url(/images/kfresh-logo.jpg);
+    background-image: url(/images/kfresh-logo.png);
+    filter: brightness(0) invert(1);
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 10px;
     background-size: contain;
     height: 100px;
     /* width: 130px; */
     min-width: 130px;
     z-index: 3;
+    transform: rotate(10deg);
+}
+
+#hero #logo-text {
+    position: absolute;
+    top: -20px;
+    left: -70px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+    transform: rotate(-10.7deg);
 }
 
 .nav_ul {
@@ -164,10 +177,68 @@ body {
     padding: 0.3em;
 } 
 
+/* Services Section */
+
 .services {
-    height: 500px;
+    height: 100%;
+    width: 100%;
+    padding: 0px 8%;
     background-color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
 }
+
+.services h2 {
+    padding-top: 90px;
+    display: flex;
+}
+
+#squeegee img {
+    /* position: relative; */
+    width: 130px;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 30px;
+}
+
+.service {
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.5s; 
+}
+
+.service i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #303ef7;
+  }
+
+.service h3 {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.service:hover {
+    background: #303ef7;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.service:hover i {
+    color: #fff;
+  }
+
 
 .about {
     height: 500px;
