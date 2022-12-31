@@ -16,8 +16,8 @@ html {
 
 body {
     font-family: sans-serif;
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
 }
 
 #hero {
@@ -191,12 +191,33 @@ body {
     flex-direction: column;
     align-items: center;
     padding-bottom: 60px;
+    z-index: 0;
 }
 
 .services h2 {
     padding-top: 90px;
     display: flex;
 }
+
+.services_bg {
+    background-image: url(/images/services_bg.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    opacity: .2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    transform: scaleX(-1);
+}
+
+/* .grad {
+    background: rgb(165,162,148);
+    background: linear-gradient(0deg, rgba(165,162,148,0.6) 0%, rgba(28,28,26,0.9710477941176471) 100%);
+    width: 100%;
+    height: 200px;
+} */
 
 #squeegee img {
     /* position: relative; */
