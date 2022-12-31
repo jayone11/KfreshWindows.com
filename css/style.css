@@ -197,6 +197,9 @@ body {
 .services h2 {
     padding-top: 90px;
     display: flex;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 0.5em;
 }
 
 .services_bg {
@@ -212,13 +215,6 @@ body {
     transform: scaleX(-1);
 }
 
-/* .grad {
-    background: rgb(165,162,148);
-    background: linear-gradient(0deg, rgba(165,162,148,0.6) 0%, rgba(28,28,26,0.9710477941176471) 100%);
-    width: 100%;
-    height: 200px;
-} */
-
 #squeegee img {
     /* position: relative; */
     width: 130px;
@@ -226,12 +222,15 @@ body {
 }
 
 .row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .service {
+    flex: 0 1 300px;
+    min-width: 250px;
     text-align: center;
     padding: 25px 10px;
     border-radius: 5px;
@@ -241,15 +240,28 @@ body {
     transition: all 0.5s; 
 }
 
+.service:first-child {
+    grid-area: element1;
+  }
+  
+  .service:nth-child(2) {
+    grid-area: element2;
+  }
+  
+  .service:nth-child(3) {
+    grid-area: element3;
+  }
+
 .service i {
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 36px;
+    margin-bottom: 1em;
     color: #303ef7;
   }
 
 .service h3 {
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 1em;
+    font-size: 24px;
 }
 
 .service:hover {
@@ -277,3 +289,13 @@ body {
     height: 500px;
     background-color: rgba(247, 249, 250, 1);
 }
+
+@media (max-width: 768px) {
+    .row {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: 
+        "element1 element2"
+        "element3 element3";
+    }
+  }
