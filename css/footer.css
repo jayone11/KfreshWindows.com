@@ -1,0 +1,12 @@
+#footer {
+	background-color: rgb(32, 33, 36);
+	min-height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.copyright-text {
+	color: rgb(230, 232, 235);
+	font-size: 14px;
+}

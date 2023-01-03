@@ -1,0 +1,94 @@
+#services {
+	height: 100%;
+	width: 100%;
+	padding: 0px 8%;
+	background-color: #fff;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 60px;
+	z-index: 0;
+	border: 2px solid red;
+}
+
+.services h2 {
+	padding-top: 90px;
+	display: flex;
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 0.5em;
+}
+
+.services_bg {
+	background-image: url('../../images/services_bg.jpg');
+	background-size: cover;
+	background-position: right;
+	background-repeat: no-repeat;
+	opacity: .2;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	transform: scaleX(-1);
+}
+
+#squeegee img {
+	/* position: relative; */
+	width: 130px;
+	margin-bottom: 30px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.service {
+	flex: 0 1 300px;
+	min-width: 250px;
+	text-align: center;
+	padding: 25px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+	cursor: pointer;
+	background: transparent;
+	transition: all 0.5s; 
+}
+
+.service:first-child {
+	grid-area: element1;
+ }
+ 
+ .service:nth-child(2) {
+	grid-area: element2;
+ }
+ 
+ .service:nth-child(3) {
+	grid-area: element3;
+ }
+
+.service i {
+	font-size: 36px;
+	margin-bottom: 1em;
+	color: #303ef7;
+ }
+
+.service h3 {
+	font-weight: 600;
+	margin-bottom: 1em;
+	font-size: 24px;
+}
+
+.service:hover {
+	background: #303ef7;
+	color: #fff;
+	transform: scale(1.05);
+}
+
+.service:hover i {
+	color: #fff;
+ }
+
