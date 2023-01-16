@@ -9,6 +9,7 @@
 /* All sections below */
 @import url(./sections/hero.css);
 @import url(./sections/services.css);
+@import url(./sections/gallery.css);
 
 /* Footer */
 @import url(./footer.css);
@@ -30,10 +31,6 @@
     min-height: 400px;
     background-color: rgba(247, 249, 250, 1);
 }
-
-
-
-
 
 @media (min-width: 340px) and (max-width: 768px) {
     .row {
