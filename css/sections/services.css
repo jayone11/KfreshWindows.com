@@ -26,7 +26,7 @@
 	text-align: center;
 	font-size: 36px;
 	margin-bottom: 0.5em;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 
 .services_bg {
@@ -45,13 +45,14 @@
 #squeegee {
     display: flex;
     justify-content: center;
-    margin-top: 0.9375em;
+    margin-top: 1.875em;
 }
 
 #squeegee img {
 	position: relative;
 	width: 130px;
 	top: 0;
+	margin-bottom: 2em;
 }
 
 .row {
@@ -71,6 +72,7 @@
 	cursor: pointer;
 	background: transparent;
 	transition: all 0.5s; 
+	margin-bottom: 1.5em;
 }
 
 .service:first-child {
